@@ -1,0 +1,63 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "public": "webpack -p --config webpack.public.config.js --progress --profile --colors",
+    "start": "webpack-dev-server --open",
+    "test:watch": "npm test -- --watch",
+    "watch": "webpack --watch",
+    "build": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.10.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "expect": "^22.2.0",
+    "mocha": "^5.0.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-loadable": "^5.3.1",
+    "react-redux": "^5.0.6",
+    "react-redux-router": "0.0.14",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "reflux": "^6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanyanan/change-reflux-to-redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lanyanan/change-reflux-to-redux/issues"
+  },
+  "homepage": "https://github.com/lanyanan/change-reflux-to-redux#readme",
+  "description": "<!-- MarkdownTOC depth=4 autolink=true bracket=round -->",
+  "directories": {
+    "test": "test"
+  }
+}
