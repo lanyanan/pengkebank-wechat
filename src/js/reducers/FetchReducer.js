@@ -1,4 +1,4 @@
-import { REQUEST_POSTS, RECEIVE_POSTS, SELECT_SUBREDDIT,INVALIDATE_SUBREDDIT } from "../Actions/FetchAction";
+import { REQUEST_POSTS, RECEIVE_POSTS, SELECT_SUBREDDIT,INVALIDATE_SUBREDDIT } from "../Actions/fetchAction";
 
 export function posts(state = {
   isFetching: false,

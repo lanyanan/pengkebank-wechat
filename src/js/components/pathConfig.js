@@ -16,4 +16,4 @@ switch(localHost) {
 		Path.aPath = "release"
 }
 
-export Path;
+export default Path;

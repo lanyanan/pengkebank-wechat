@@ -15,23 +15,7 @@ const AsyncHome = Loadable({
   loading: Loading
 });
 
-const AsyncTiming = Loadable({
-  loader: () => import("./components/Timing"),
-  loading: Loading
-});
 
-const AsyncList = Loadable({
-  loader: () => import("./components/List"),
-  loading: Loading
-});
-
-// import {Lamp} from './Lamp';
-// import {Reseting} from './Reseting';
-// import {Music} from './Music';
-// import {List} from './list';
-// import {Timing} from './Timing';
-// import {Toast} from './toast';
-// import {Switch} from './Switch';
 import {Router, Route, Switch, BrowserRouter, HashRouter, Redirect} from 'react-router-dom'
 
 const loggerMiddleware = createLogger()
@@ -51,28 +35,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	        <HashRouter>
 	        	<Switch>
 		        	<Route exzact path="/home" component={AsyncHome} />
-		        	<Route exzact path="/timing" component={AsyncTiming} />
-		        	<Route exzact path="/list" component={AsyncList} />
 		        	<Redirect path="/" to={{pathname: '/home'}} />
 		        </Switch>
 	        </HashRouter>
 	  	</Provider>		
 	), document.getElementById('ROOT'))
 });
-
-
-// 下面不需要加#的导航路由但是服务器需要改造 用的h5的api
-// 当二级导航当刷新的时候会出现404
-// 
-// document.addEventListener('DOMContentLoaded', ()=>{
-// 	render((   
-// 		<Provider store={store}>
-// 	        <BrowserRouter>
-// 				<Switch>
-// 					<Route path='/' component={Home} />
-// 					<Route path='/app' component={App} />
-// 				</Switch>
-// 			<BrowserRouter>
-// 	  	</Provider>		
-// 	), document.getElementById('ROOT'))
-// });
