@@ -13,7 +13,7 @@ module.exports = {
 	    chunkFilename: '[name].bundle.js',
 	 },
 	plugins: [
-		//new CleanWebpackPlugin(['dist']),
+		new CleanWebpackPlugin(['dist']),
 	    new HtmlWebpackPlugin({
 	        title: 'Output Management',
 	        filename: 'index.html',
@@ -39,11 +39,20 @@ module.exports = {
 			    }
 			},
 	        {
-	         test: /\.css$/,
-	         use: [
-	           'style-loader',
-	           'css-loader'
-	         ]
+	         	test: /\.css$/,
+	        	use: [
+	           		'style-loader',
+	           		'css-loader',
+	           	    'sass-loader'
+	        	]
+	        },
+	        {
+	         	test: /\.scss$/,
+	        	use: [
+	           		'style-loader',
+	           		'css-loader',
+	           	    'sass-loader'
+	        	]
 	        },
 	        {
 	        	test: /\.(png|svg|jpg|gif)$/,

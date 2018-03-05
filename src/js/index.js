@@ -3,7 +3,7 @@ import { render } from 'react-dom'
 import { createStore, applyMiddleware } from 'redux';
 import Loadable from 'react-loadable';
 import { Provider } from 'react-redux'
-import '../css/style.css';
+import '../css/style.scss';
 import Store from './reducers/reducers';
 import thunkMiddleware from 'redux-thunk'
 import {createLogger} from 'redux-logger'

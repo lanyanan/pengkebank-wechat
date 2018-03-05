@@ -27,7 +27,15 @@ if %line%==1 (
     npm run start
 ) else if %line%==2 (
     npm run build
-) else (
+    pause
+) else if %line%==3 (
+   rd/s/q "../pengkebank-wechat-public/"
+   md "../pengkebank-wechat-public"
+   xcopy /s /e "public" "..\pengkebank-wechat-public\public\"
+   xcopy /s /e "dist" "..\pengkebank-wechat-public\static\"
+   pause
+) 
+else (
    echo Ñ¡ÔñÓĞÎó
    goto select_line
 )
