@@ -24,7 +24,9 @@ module.exports = {
     devtool: 'source-map',
     devServer: {
         contentBase: path.join(__dirname, ""),
-        hot: true
+        hot: true,
+        host:'10.11.1.34'
+
     },
     module: {
 	    rules: [
