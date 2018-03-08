@@ -54,6 +54,7 @@ class Home extends Component {
     }
     render() {
     // 通过调用 connect() 注入:
+    console.log(this.props)
     const { dispatch, visibleTodos} = this.props;
     console.log(visibleTodos.sildBarState)
     return (
@@ -73,7 +74,7 @@ class Home extends Component {
                                 <div className="home-container-banner-txt">
                                     <img src={require("../../../img/fm.png")}/>
                                     <span>PChouse家居杂志 高雅气质</span>
-                                    <Link to="/">[逛店]</Link>
+                                    <Link to="/activity">[逛店]</Link>
                                 </div>
                             </div>
                     })
@@ -123,8 +124,9 @@ class Home extends Component {
                         {
                             visibleTodos.navArr.map((item, index)=>{
                                 return  <div key={index} className="home-sildbar-item">
-                                            <span>{item.navName}</span>
-                                            <span className="home-sildbar-item-icon">></span>
+                                            <Link to="/details"><span>{item.navName}</span>
+                                            <span className="home-sildbar-item-icon"></span>
+                                            </Link>
                                         </div>
                             })
                         }

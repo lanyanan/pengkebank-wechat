@@ -19,6 +19,23 @@ const AsyncHome = Loadable({
   loading: Loading
 });
 
+const AsyncBrandList = Loadable({
+  loader: () => import("./components/brand/brandList"),
+  loading: Loading
+});
+
+const AsyncHomeActivity = Loadable({
+  loader: () => import("./components/home/homeActivity"),
+  loading: Loading
+});
+
+const AsyncBrandDetails = Loadable({
+  loader: () => import("./components/brand/brandDetails"),
+  loading: Loading
+});
+
+
+
 
 //中英文语言切换
 import {IntlProvider, FormattedMessage} from 'react-intl';
@@ -79,6 +96,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		        <HashRouter>
 		        	<Switch>
 			        	<Route exzact path="/home" component={AsyncHome} />
+			        	<Route exzact path="/brandList" component={AsyncBrandList} />
+			        	<Route exzact path="/details" component={AsyncBrandDetails} />
+			        	<Route exzact path="/activity" component={AsyncHomeActivity} />
 			        	<Redirect path="/" to={{pathname: '/home'}} />
 			        </Switch>
 		        </HashRouter>
