@@ -18,7 +18,18 @@ const AsyncHome = Loadable({
   loader: () => import("./components/home/home"),
   loading: Loading
 });
-
+const Login = Loadable({
+	loader: () => import("./components/registration/login"),
+	loading: Loading
+});
+const Integral = Loadable({
+loader: () => import("./components/Integral/index"),
+loading: Loading
+});
+const IntegralDetails = Loadable({
+	loader: () => import("./components/Integral/details"),
+	loading: Loading
+});
 
 //中英文语言切换
 import {IntlProvider, FormattedMessage} from 'react-intl';
@@ -79,6 +90,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	        <HashRouter>
 	        	<Switch>
 		        	<Route exzact path="/home" component={AsyncHome} />
+					<Route exzact path="/login" component={Login} />
+					<Route exzact path="/integral" component={Integral} />
+					<Route exzact path="/integralDetails" component={IntegralDetails} />
 		        	<Redirect path="/" to={{pathname: '/home'}} />
 		        </Switch>
 	        </HashRouter>

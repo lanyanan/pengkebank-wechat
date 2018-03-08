@@ -35,6 +35,7 @@
     "webpack-dev-server": "^2.10.0"
   },
   "dependencies": {
+    "antd-mobile": "^2.1.6",
     "babel-runtime": "^6.26.0",
     "expect": "^22.2.0",
     "intl": "^1.2.5",

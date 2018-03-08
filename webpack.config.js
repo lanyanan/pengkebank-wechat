@@ -25,7 +25,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, ""),
         hot: true,
-        host:'10.11.1.34'
+        host:'10.11.1.6'
 
     },
     module: {

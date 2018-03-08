@@ -1,0 +1,220 @@
+@font-face { 
+	font-family: PingFang-SC-Medium;  
+	src: url('../public/MFJunYa_Noncommercial-Regular.otf');
+    }
+
+.clear{
+    clear: both;
+}
+body{
+    background: #f5f5f5;
+}
+.contentWap{
+    width:100%;
+    height:100%;
+    padding:0;
+    background: #fff;
+}
+.contentWap .return{
+    width: 100%;
+    height:.493rem;
+    padding: .44rem .3rem .546rem .3rem;
+    box-sizing: border-box;
+    background: #fff;
+}
+.contentWap .title{
+    width: 100%;
+    padding: 0 .3rem;
+    box-sizing: border-box;
+}
+.contentWap .title h1{
+    font-size:.6rem;
+    color:#000;
+    font-family: PingFang-SC-Medium;
+    font-weight: normal;
+    margin-bottom: .22rem;
+}
+.contentWap .required{
+    width:100%;
+}
+.contentWap .bottom{
+    height:1.34rem;
+    background: #f5f5f5;
+    padding-top:.4rem;
+}
+.listDate{
+    position: relative;
+}
+.arrowDate{
+    position: absolute;
+    right:0;    
+    top:0;
+}
+.required li{
+    height:1.22rem;
+    line-height: 1.22rem;
+    border-bottom: 1px solid rgba(151,151,151,.21);
+    font-size:.3rem;
+    padding-left: .3rem;
+    box-sizing: border-box;
+}
+.required li label{
+    color:#333;
+}
+.required li span{
+    color:#999;
+    float:right;
+    padding-right:.2rem;
+    box-sizing: border-box;
+}
+/*右箭头*/
+.arrow{
+    display: inline-block;
+    width: .3rem;
+    height:1.2rem;
+    background:url(../image/arrow.png) no-repeat;
+    background-size:.3rem .3rem;
+    float:right;
+    background-position-y: 50%;
+    margin-right:.3rem;
+}
+.optional{
+    height:.94rem;
+    width: 100%;
+    background:#f5f5f5;
+    font-size:.3rem;
+    line-height: .94rem;
+    padding-left:.3rem;
+    color:#888;
+    box-sizing: border-box;
+}
+.submint{
+    width:6.7rem;
+    height:.94rem;
+    line-height: .94rem;
+    font-size:.34rem;
+    text-align: center;
+    background:#158599;
+    color:#fff;
+    border-radius: .04rem;
+    -webkit-border-radius:.04rem;
+    margin:.0 auto;
+}
+.women{
+    width: 100%;
+    height:100%;
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top:0;
+    pointer-events:"none";
+    overflow: hidden;
+}
+.women .womenText{
+    width: 6.9rem;
+    height:2.96rem;
+    background:#fff;
+    position: absolute;
+    bottom: -4rem;
+    left:.3rem;
+    border-radius: .08rem;
+    -webkit-border-raius:.08rem;
+    pointer-events:"auto";
+    font-size:.3rem;
+    text-align: center;
+    animation:myfirst .1s;
+    -webkit-animation:myfirst .1s;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes myfirst
+  {
+    100%{
+        bottom:.4rem;
+    }
+}
+.womenText h5{
+    color:#999;
+    height: .98rem;
+    line-height: .98rem;
+    border-bottom: 1px solid rgba(151,151,151,.21);
+}
+.womenText p{
+    height:.98rem;
+    line-height: .98rem;
+    color:#158599;
+    border-bottom: 1px solid rgba(151,151,151,.21);
+}
+.womenText p:last-child{
+    border: 0;
+}
+/* 修改用户名 */
+.userName{
+    width: 100%;
+    height:100%;
+    background:#fff;
+    position: fixed;
+    display: none;
+}
+.userName .name{
+    width: 6.7rem;
+    margin:0 auto;
+    font-size:.4rem;
+    color:#333;
+    padding-bottom: .1rem;
+    border-bottom: 1px solid rgba(151,151,151,.21);
+}
+.userName .name input{
+    width:6rem;
+    height:1rem;
+}
+.userName .name>label{
+    width: .38rem;
+    height:.38rem;
+    background:url("../image/close.jpg") no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    float:right;
+    margin-top:.4rem;
+}
+.userName .submintName{
+    width:6.7rem;
+    height:.94rem;
+    line-height: .94rem;
+    font-size:.34rem;
+    text-align: center;
+    background:#158599;
+    color:#fff;
+    border-radius: .04rem;
+    -webkit-border-radius:.04rem;
+    margin:.4rem auto 0 auto;
+}
+/* 修改时间控件样式 */
+.date-picker-list .am-list-item .am-list-line .am-list-extra {
+    flex-basis: initial;
+  }
+.am-list-item{
+    padding-left:0 !important;
+}
+html:not([data-scale]) .am-list-body::before{
+    height: 0 !important;
+    width: 0 !important;
+}
+html:not([data-scale]) .am-list-body::after{
+    height: 0 !important;
+    width: 0 !important;
+}
+.am-list-content{
+    color:#333 !important;
+    font-size:.3rem !important;
+}
+.am-list-item .am-list-line .am-list-extra{
+    color:#999 !important;
+}
+.am-list-body{
+    padding-top:.18rem !important;
+}
+.am-picker-popup-item{
+    color:#888 !important;
+}
+.am-list-item .am-list-line .am-list-arrow-horizontal{
+    visibility:hidden !important;
+}

@@ -1,0 +1,99 @@
+@font-face { 
+	font-family: PingFang-SC-Medium;  
+	src: url('./MFJunYa_Noncommercial-Regular.otf');
+    }
+.clear{
+    clear: both;
+}
+html,body{background:#fff;}
+.content{
+    width:100%;
+    height:100%;
+    padding: 0 .3rem;
+    background:#fff;
+    box-sizing: border-box;
+}
+.content .return{
+    width: 100%;
+    height:.347rem;
+    margin-bottom:.273rem;
+}
+.content .title{
+    width: 100%;
+}
+.content .title h1{
+    font-size:.6rem;
+    color:#000;
+    font-family: PingFang-SC-Medium;
+    font-weight: normal;
+    margin-bottom: .2rem;
+}
+.content .title p{
+    font-size:.34rem;
+    color:#999;
+    margin-bottom: 1.06rem;
+}
+.content .moblie{
+    width: 100%;
+}
+.moblie .number{
+    font-size:0;
+    width: 100%;
+    padding-bottom: .32rem;
+    border-bottom: 1px solid rgba(151,151,151,.21);
+    margin-bottom: .5rem;
+}
+.number label{
+    font-size:.34rem;
+    color:#333;
+    margin-right:.34rem;
+}
+.number input{
+    width:2.4rem;
+    font-size:.34rem;
+    color:#999;
+    -webkit-appearance: none;
+    outline:none;
+    -webkit-tap-highlight-color:transparent;
+}
+.number .obtainYzm{
+    font-size:.34rem;
+    color:#158599;
+    float:right;
+    margin-right:0;
+}
+.inputYzm{
+    width:100%;
+    font-size:0;
+    padding-bottom: .32rem;
+    border-bottom: 1px solid rgba(151,151,151,.21);
+}
+.inputYzm input{
+    width: 4rem;
+    font-size:.34rem;
+    color:#999;
+    outline: none;
+    -webkit-tap-highlight-color:transparent;
+}
+.inputYzm label{
+    font-size:.34rem;
+    color:#333;
+    float:right;
+}
+.center{
+    height: .94rem;
+    background:#fff;
+    padding-top:1.04rem;
+}
+.next{
+    clear: both;
+    width: 1.8rem;
+    height:.94rem;
+    text-align: center;
+    line-height: .94rem;
+    border-radius:.04rem;
+    background:#158599;
+    font-size:.34rem;
+    color:#fff;
+    float:right;
+}
