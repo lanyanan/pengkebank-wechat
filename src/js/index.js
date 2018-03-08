@@ -76,12 +76,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			<IntlProvider
 				locale={localeLanguage.locale} 
             	messages={localeLanguage.messages}>
-	        <HashRouter>
-	        	<Switch>
-		        	<Route exzact path="/home" component={AsyncHome} />
-		        	<Redirect path="/" to={{pathname: '/home'}} />
-		        </Switch>
-	        </HashRouter>
+		        <HashRouter>
+		        	<Switch>
+			        	<Route exzact path="/home" component={AsyncHome} />
+			        	<Redirect path="/" to={{pathname: '/home'}} />
+			        </Switch>
+		        </HashRouter>
 	        </IntlProvider>
 	  	</Provider>		
 	), document.getElementById('ROOT'))

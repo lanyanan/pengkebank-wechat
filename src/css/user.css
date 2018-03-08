@@ -82,7 +82,6 @@
 	width: 0.5rem;
 	height: 0.5rem;
 	margin: 0 auto 0.1rem;
-	background: #fff;
 	display: block;
 	text-align: center;
 }
@@ -154,6 +153,7 @@
 	background: #FFFFFF;
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.06);
 }
+
 .home-container-recommend-item-img {
 	position: relative;
 	width: 100%;
@@ -170,22 +170,46 @@
 	font-size: 0.24rem;
 	color: #FFFFFF;
 	letter-spacing: -0.29px;
-	padding: 0.04rem;
+	padding: 0 0.04rem;
 }
 .home-recommend-card-img {
 	width: 100%;
 	height: 100%;
 }
+
+.home-container-recommend-circle {
+	position: absolute;
+	left: 50%;
+	bottom:-0.4rem;
+	margin-left: -0.42rem;
+	display: block;
+	width: 0.8rem;
+	height: 0.8rem;
+	border: 2px solid rgba(0,0,0,0.1);
+	border-radius: 0.4rem;
+	background: #fff;
+}
+.home-container-recommend-circle-hidden {
+	position: absolute;
+	left: 50%;
+	bottom:-0.4rem;
+	margin-left: -0.42rem;
+	display: block;
+	width: 0.9rem;
+	height: 0.4rem;
+	background: #fff;
+
+}
 .home-recommend-card-icon {
 	position: absolute;
 	left: 50%;
 	bottom:-0.4rem;
-	margin-left: -0.4rem;
+	margin-left: -0.42rem;
 	display: block;
 	width: 0.8rem;
 	height: 0.8rem;
 	border-radius: 0.4rem;
-	background: #fff;
+	border: 2px solid rgba(0,0,0,0);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -216,7 +240,8 @@
 }
 .home-footer-link {
 	width: 100%;
-	height: 0.42rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
 	text-align: center;
 	padding-top: 0.4rem;
 	padding-bottom: 0.3rem;
@@ -224,7 +249,29 @@
 	font-size: 0.3rem;
 	color: #666666;
 	letter-spacing: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
+.home-footer-link span {
+	display: inline-block;
+}
+.home-weixin {
+	width: 0.4rem;
+	height: 0.4rem;
+	margin: 0 0.3rem;
+	display: inline-block;
+	background: url('../img/weixin.png') no-repeat left top;
+	background-size: cover;
+}
+.home-weibo {
+	width: 0.4rem;
+	height: 0.4rem;
+	display: inline-block;
+	background: url('../img/weibo.png') no-repeat left top;
+	background-size: cover;
+}
+
 .home-footer-copyright {
 	color: #888888;
 }
