@@ -42,7 +42,6 @@ class Home extends Component {
      * 设置session 刷新页面切换语言
      * @Author   yananLan
      * @DateTime 2018-03-07
-     * @version  [1.0]
      */
     changeLanguage() {
         if(sessionStorage.getItem("localeLanguage")=="en"){
@@ -55,6 +54,7 @@ class Home extends Component {
     }
     render() {
     // 通过调用 connect() 注入:
+    console.log(this.props)
     const { dispatch, visibleTodos} = this.props;
     console.log(visibleTodos.sildBarState)
     return (
@@ -72,9 +72,9 @@ class Home extends Component {
                                 <img src={require("../../../img/item-bg.png")}/>
                                 <div className="home-container-banner-bg"></div>
                                 <div className="home-container-banner-txt">
-                                    <img src={require("../../../img/sildbar.png")}/>
+                                    <img src={require("../../../img/fm.png")}/>
                                     <span>PChouse家居杂志 高雅气质</span>
-                                    <Link to="/">[逛店]</Link>
+                                    <Link to="/activity">[逛店]</Link>
                                 </div>
                             </div>
                     })
@@ -90,6 +90,8 @@ class Home extends Component {
                         visibleTodos.itemArr.map((item, index)=>{
                             return  <div key={index} className="home-container-recommend-item">
                                         <div className="home-container-recommend-item-img">
+                                            <div className="home-container-recommend-circle"></div>
+                                            <div className="home-container-recommend-circle-hidden"></div>
                                             <img className="home-recommend-card-img" src={require("../../../img/item-bg.png")}/>
                                             <div className="home-recommend-card-icon">
                                                 <img src={require("../../../img/icon.png")} />
@@ -122,8 +124,9 @@ class Home extends Component {
                         {
                             visibleTodos.navArr.map((item, index)=>{
                                 return  <div key={index} className="home-sildbar-item">
-                                            <span>{item.navName}</span>
-                                            <span className="home-sildbar-item-icon">></span>
+                                            <Link to="/details"><span>{item.navName}</span>
+                                            <span className="home-sildbar-item-icon"></span>
+                                            </Link>
                                         </div>
                             })
                         }

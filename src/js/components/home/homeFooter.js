@@ -10,6 +10,8 @@ export default class HomeFooter extends Component {
             <section className="home-footer">
                 <div className="home-footer-link">
                     <span>关注我们:</span>
+                    <Link className="home-weixin" to=""></Link>
+                    <Link className="home-weibo" to=""></Link>
                 </div>
                 <div className="home-footer-copyright">
                     <p>隐私政策 | 版权声明 | 版权声明</p>
