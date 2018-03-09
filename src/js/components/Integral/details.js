@@ -16,11 +16,11 @@ class  Details extends Component {
         return (
             <div>
                 <div className="headerTop">
-                     <span className="home-top-nav activity-top-nav">
-                     <Link to="/integral"></Link>
+                    <span className="home-top-nav activity-top-nav">
+                    <Link to="/integral"></Link>
                     </span>
                     <span className="home-top-title">积分商城详情</span>
-                    <span className="home-top-btn">En</span> 
+                    <span className="home-top-btn">En</span>
                 </div>
                 <section className="center">
                     <div className="top"></div>
