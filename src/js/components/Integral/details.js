@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Router, Route, Link} from 'react-router-dom'
 import '../../././../../public/static/flexble';
 import './css/details.css'
 import imgTop from './image/imgTop.png';
@@ -14,6 +15,12 @@ class  Details extends Component {
     render(){
         return (
             <div>
+                <div className="headerTop">
+                    {/* <span className="home-top-nav" onTouchTap={}>
+                    </span>
+                    <span className="home-top-title"></span>
+                    <span className="home-top-btn" onTouchTap={}>En</span> */}
+                </div>
                 <section className="center">
                     <div className="top"></div>
                     <div className="bottom"></div>
@@ -51,6 +58,7 @@ class  Details extends Component {
                            <div className="right">兑 换</div>
                     </div>
                 </section>
+                <Link to="/integral">[首页]</Link>
             </div>
         )
     }

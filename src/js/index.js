@@ -34,8 +34,20 @@ const AsyncBrandDetails = Loadable({
   loading: Loading
 });
 
+const Login = Loadable({
+	loader: () => import("./components/registration/login"),
+	loading: Loading
+  });
 
+const Integral = Loadable({
+loader: () => import("./components/Integral/index"),
+loading: Loading
+});
 
+const IntegralDetails = Loadable({
+loader: () => import("./components/Integral/details"),
+loading: Loading
+});
 
 //中英文语言切换
 import {IntlProvider, FormattedMessage} from 'react-intl';

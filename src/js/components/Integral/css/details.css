@@ -1,4 +1,40 @@
 .clear{clear: both;}
+.headerTop{
+    width: 100%;
+    height: .8rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.10);
+}
+.home-top-nav{
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: left;
+    font-size: .32rem;
+    padding-left: .3rem;
+    background: url("../image/return.png") no-repeat center center;
+    background-size: .34rem .34rem;
+}
+.activity-top-nav{
+    background: url("../image/return.png") no-repeat center center;
+    background-size: .24rem .43rem;
+}
+.home-top-title{
+    font-size: .32rem;
+    color: #000;
+}
+.home-top-btn{
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: right;
+    font-size: .32rem;
+    padding-right: .3rem;
+}
 .center{
     height:100%;
     box-shadow:inset 0 .24rem .2rem -.2rem #ccc;
