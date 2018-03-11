@@ -13,6 +13,8 @@
     - [项目构建及发布](#项目构建及发布)
 - [项目调试](#项目调试)
 	- [项目的调试工具](#项目调试)
+- [协作流程](#协作流程)
+	- [](#项目调试)
 
 
 <!-- /MarkdownTOC -->
@@ -23,6 +25,7 @@
 <span id="开发环境"></span>
 ## 开发环境
 本项目采用react开发，构建工具是webpack，路由采用react-router 4.0，状态的管理采用redux，这些工具都是当前最新版本的，@dateTime 2018-02-07
+
 
 <span id="开发环境搭建"></span>
 ### 开发环境搭建
@@ -162,5 +165,29 @@ Fiddler本身其实是一款网络代理软件，当你启动它的时候，你�
 
 至此，你可以在本地编辑你的项目，在需要的地方打断点，然后在app里进行操作。weinre将提供输出你所需要的调试信息的能力。甚至，在“Elements”标签下，你还可以“遥控”界面。
 
+<span id="协作流程"></span>
+## 协作流程
 
+本项目采用github进行项目代码的托管
+在看这部分前，请先回顾阅读业界认可的成功的 Git Branch Work Flow 模型 [A Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/) ，了解日常开发中的场景，有助于熟悉下面的使用过程。
 
+1.添加合作者
+
+- 用户在Setting下设置合作者Collaborators
+- 可以直接搜索合作者的用户名称然后添加到Collaborators
+- 复制邀请链接让合作者打开，然后accept 
+- 到此新建的项目合作者会有change push merge权限
+
+2.协作方式之Git-Develop 分支模式
+
+![图片](images/branch_module.png)
+
+Git-Develop 分支模式是基于 Git 代码库设计的一种需要严格控制发布质量和发布节奏的开发模式。
+develop 作为固定的持续集成和发布分支，并且分支上的代码必须经过 CodeReview 后才可以提交到 Develop 分支。它的基本流程如下：
+
+- 每一个需求/变更都单独从Master上创建一条Branch分支；
+- 用户在这个Branch分支上进行Codeing活动；
+- 代码达到发布准入条件后提交Codereview，Codereview通过后代码自动合并到Develop分支；
+- 待所有计划发布的变更分支代码都合并到Develop后，系统再 rebase master 代码到Develop 分支，然后自行构建，打包，部署等动作。
+- 应用发布成功后会基于Develop分支的发布版本打一个“当前线上版本Tag”基线；
+- 应用发布成功后会把Develop分支的发布版本合并回master；
