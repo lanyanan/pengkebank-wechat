@@ -17,12 +17,13 @@
 
 <!-- /MarkdownTOC -->
 
-
-****************
-
 <span id="开发环境"></span>
 ## 开发环境
-本项目采用react开发，构建工具是webpack，路由采用react-router 4.0，状态的管理采用redux，这些工具都是当前最新版本的，@dateTime 2018-02-07
+> 本项目采用react开发，
+> 构建工具是webpack，
+> 路由采用react-router 4.0，
+> 状态的管理redux，异步的使用saga 这些工具都是当前最新版本的
+> @dateTime 2018-02-07
 
 <span id="开发环境搭建"></span>
 ### 开发环境搭建
