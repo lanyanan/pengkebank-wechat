@@ -1,13 +1,10 @@
 @import url(../../public/static/reset.css);
 @import url(../../public/static/mediaQuery.css);
-@import url(../../public/static/colorPicker/colorPicker.css);
-/*@import url(./../../../common/src/lib/colorPicker/colorPicker.css);*/
+/*@import url(../../public/static/colorPicker/colorPicker.css);
+@import url(./../../../common/src/lib/colorPicker/colorPicker.css);*/
 
 /**
  * 由于@import "scss" 引入的scss不会被编译成css 所以解决办法是建立一个style.js
  */
+@import url(./user.css);
 
-$nav-color: #F90;
-nav {
-  color: $nav-color;
-}

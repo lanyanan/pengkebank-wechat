@@ -15,6 +15,8 @@ const AsyncHome = Loadable({
   loading: Loading
 });
 
+const injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 
 import {Router, Route, Switch, BrowserRouter, HashRouter, Redirect} from 'react-router-dom'
 
